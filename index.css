@@ -1,0 +1,1626 @@
+.message{
+  position: absolute;
+  font-size: 24px;
+  color: #1376F8;
+  font-weight: bold;
+  bottom: -40px;
+}
+
+#form1{
+  position:relative ;
+  top: -80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 50px;
+}
+
+
+
+  /* General Styles */
+/* body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f4f8;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+} */
+
+/* Container Styles */
+.container {
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  width: 500px;
+  max-width: 100%;
+}
+
+/* Form Styles */
+form {
+ 
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-weight: 500;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin-bottom: 10px;
+  font-size: 20px;
+  color: #000;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="date"],
+select {
+  text-align: center;
+  padding: 10px;
+  margin-bottom: 30px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+  width: 100%;
+  box-sizing: border-box;
+  transition: border 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="number"]:focus,
+input[type="date"]:focus,
+select:focus {
+  border-color: #007BFF;
+  outline: none;
+}
+
+select {
+  appearance: none;
+  background: url('data:image/svg+xml;utf8,<svg fill="black" height="20" viewBox="0 0 24 24" width="20" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M7 10l5 5 5-5H7z"/></svg>') no-repeat right 10px center;
+  background-color: white;
+}
+
+button {
+  width: 250px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #1376F8;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+button:focus {
+  outline: none;
+}
+
+/* Responsive Styles */
+@media (max-width: 500px) {
+  .container {
+      padding: 20px;
+  }
+
+  label {
+      font-size: 12px;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="number"],
+  input[type="date"],
+  select {
+      font-size: 12px;
+  }
+
+  button {
+      font-size: 14px;
+  }
+}
+
+
+
+
+
+
+.get-ready-for {
+  margin: 0;
+  align-self: stretch;
+  position: relative;
+  font-size: inherit;
+  letter-spacing: -0.02em;
+  line-height: 120%;
+  text-transform: capitalize;
+  font-weight: 600;
+  font-family: inherit;
+}
+.we-use-only {
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  position: relative;
+  letter-spacing: 0.02em;
+  line-height: 155%;
+  display: inline-block;
+  max-width: 100%;
+}
+.get-ready-for-your-best-ever-d-parent,
+.hero-description-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  max-width: 100%;
+}
+.hero-description-container {
+  width: 545px;
+  flex-direction: row;
+  padding: 0 var(--padding-6xs);
+  box-sizing: border-box;
+  font-size: var(--font-size-lg);
+  color: var(--body-text);
+}
+.get-ready-for-your-best-ever-d-parent {
+  align-self: stretch;
+  flex-direction: column;
+  gap: 32px;
+}
+.book-an-appointment {
+  position: relative;
+  font-size: var(--font-size-base);
+  letter-spacing: 0.02em;
+  line-height: 155%;
+  font-weight: 600;
+  font-family: var(--font-poppins);
+  color: var(--secondary-color);
+  text-align: left;
+}
+.book-appointment-container {
+  cursor: pointer;
+  border: 0;
+  padding: var(--padding-mini) var(--padding-10xl);
+  background-color: var(--mid-blue-design);
+  border-radius: var(--br-3xs);
+  flex-direction: row;
+  white-space: nowrap;
+}
+.book-appointment-container:hover,
+.book-now-button-container:hover,
+.submit-container:hover {
+  background-color: var(--color-dodgerblue);
+}
+.book-appointment-container,
+.frame-parent,
+.hero-button-container,
+.hero-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.hero-button-container {
+  flex-direction: row;
+  padding: 0 var(--padding-6xs);
+}
+.frame-parent,
+.hero-container {
+  flex-direction: column;
+  max-width: 100%;
+}
+.frame-parent {
+  align-self: stretch;
+  gap: 74px;
+}
+.hero-container {
+  width: 726px;
+  padding: 106px 0 0;
+  box-sizing: border-box;
+  min-width: 726px;
+}
+.dental-logo-icon-design-templa {
+  height: 673px;
+  flex: 1;
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+  object-fit: cover;
+  min-width: 543px;
+}
+.component-3,
+.page-content {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  max-width: 100%;
+}
+.component-3 {
+  align-self: stretch;
+  flex-direction: row;
+  row-gap: 20px;
+  z-index: 1;
+}
+.page-content {
+  width: 1561px;
+  flex-direction: column;
+  padding: 45px 0 0;
+  box-sizing: border-box;
+}
+.dentist,
+.icon {
+  position: relative;
+}
+.icon {
+  height: 34.8px;
+  width: 32.3px;
+  min-height: 35px;
+}
+.dentist {
+  text-decoration: none;
+  align-self: stretch;
+  font-weight: 900;
+  color: inherit;
+  white-space: nowrap;
+}
+.navbar-brand-name {
+  flex: 1;
+  flex-direction: column;
+  padding: var(--padding-4xs) 0 0;
+}
+.icon-parent,
+.navbar-brand-name,
+.navbar-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.icon-parent {
+  align-self: stretch;
+  flex-direction: row;
+  gap: 7.5px;
+}
+.navbar-container {
+  width: 126.5px;
+  flex-direction: column;
+  padding: 10px 0 0;
+  box-sizing: border-box;
+}
+.about,
+.contact,
+.home,
+.services {
+  position: relative;
+  letter-spacing: 0.02em;
+  line-height: 25px;
+  font-weight: 600;
+  display: inline-block;
+  min-width: 50px;
+}
+.about,
+.contact,
+.services {
+  font-weight: 500;
+  min-width: 70px;
+}
+.about,
+.contact {
+  min-width: 51px;
+}
+.contact {
+  min-width: 68px;
+}
+.navbar-menu,
+.navigation-links {
+  margin: 0;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  max-width: 100%;
+}
+.navigation-links {
+  width: 397px;
+  flex-direction: row;
+  gap: 37.1px;
+  text-align: left;
+  font-size: var(--font-size-base);
+  color: var(--dark-blue-design);
+  font-family: var(--font-poppins);
+}
+.navbar-menu {
+  width: 450.5px;
+  flex-direction: column;
+  padding: var(--padding-mini) 0 0;
+  box-sizing: border-box;
+}
+.book-now {
+  position: relative;
+  font-size: var(--font-size-base);
+  letter-spacing: 0.02em;
+  line-height: 155%;
+  font-weight: 600;
+  font-family: var(--font-poppins);
+  color: var(--secondary-color);
+  text-align: left;
+  display: inline-block;
+  min-width: 82px;
+}
+.book-now-button-container {
+  cursor: pointer;
+  border: 0;
+  padding: var(--padding-mini) 40px;
+  background-color: var(--mid-blue-design);
+  border-radius: var(--br-3xs);
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  white-space: nowrap;
+}
+.navbar {
+  width: 1401px;
+  justify-content: space-between;
+  gap: var(--gap-xl);
+  margin-left: -1559px;
+  text-align: left;
+  font-size: var(--font-size-xl);
+  color: var(--dark-blue-design);
+  font-family: var(--font-inter);
+}
+.content-wrapper-inner,
+.navbar,
+.page-content-parent {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  max-width: 100%;
+}
+.page-content-parent {
+  width: 1561px;
+  justify-content: flex-start;
+}
+.content-wrapper-inner {
+  align-self: stretch;
+  justify-content: flex-end;
+}
+.card-backgrounds,
+.component-1-child {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  margin: 0 !important;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: var(--br-3xs);
+}
+.component-1-child {
+  box-shadow: 0 20px 70px rgba(230, 246, 254, 0.3);
+  background-color: var(--light-blue-design);
+}
+.card-backgrounds {
+  background-color: var(--secondary-color);
+}
+.card-images,
+.card-shapes {
+  border-radius: 50%;
+  background-color: var(--sky-blue-design);
+}
+.card-images {
+  width: 50px;
+  height: 53.8px;
+  position: absolute;
+  margin: 0 !important;
+  top: 30.1px;
+  right: 168px;
+  filter: blur(25px);
+  z-index: 1;
+}
+.card-shapes {
+  align-self: stretch;
+  width: 70px;
+  position: relative;
+  flex-shrink: 0;
+  z-index: 2;
+}
+.card-title-container {
+  align-self: stretch;
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 0 var(--padding-2xl) 0 var(--padding-xl);
+}
+.root-canal-treatment {
+  margin: 0;
+  position: relative;
+  font-size: inherit;
+  line-height: 29px;
+  text-transform: capitalize;
+  font-weight: 500;
+  font-family: inherit;
+  flex-shrink: 0;
+  z-index: 1;
+}
+.card-content,
+.card-content-wrapper {
+  align-self: stretch;
+  flex: 1;
+  display: flex;
+  align-items: flex-start;
+}
+.card-content-wrapper {
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: var(--gap-lg-2);
+}
+.card-content {
+  flex-direction: row;
+  justify-content: flex-end;
+  padding: 0 var(--padding-15xl) 0 var(--padding-17xl);
+}
+.learn-more {
+  position: relative;
+  text-decoration: underline;
+  letter-spacing: 0.02em;
+  line-height: 25px;
+  font-weight: 500;
+  display: inline-block;
+  min-width: 89px;
+  white-space: nowrap;
+}
+.iconlylight-outlinearrow-r {
+  width: 24px;
+  height: 25.8px;
+  position: relative;
+  border-radius: var(--br-3xs);
+  object-fit: cover;
+}
+.card-button-icon-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-11xs-1) 0 0;
+}
+.card-titles,
+.learn-more-parent {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+.learn-more-parent {
+  justify-content: flex-start;
+  gap: var(--gap-5xs);
+  z-index: 1;
+}
+.card-titles {
+  align-self: stretch;
+  justify-content: center;
+  text-align: left;
+  font-size: var(--font-size-base);
+}
+.card-backgrounds-parent {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-start;
+  padding: var(--padding-lgi-4) var(--padding-16xl) var(--padding-9xl);
+  box-sizing: border-box;
+  gap: var(--gap-2xl-1);
+}
+.teeth-1-icon {
+  position: absolute;
+  height: 16.01%;
+  width: 12.4%;
+  top: 9.66%;
+  right: 43.67%;
+  bottom: 74.33%;
+  left: 43.93%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+  z-index: 3;
+}
+.frame-group {
+  height: 323px;
+  width: 387px;
+  position: relative;
+  max-width: 100%;
+  z-index: 1;
+}
+.frame-inner {
+  align-self: stretch;
+  flex: 1;
+  left: -50px;
+  position: relative;
+  border-radius: 50%;
+  background-color: var(--sky-blue-design);
+  flex-shrink: 0;
+  z-index: 2;
+}
+.frame-inner1 {
+  align-self: stretch;
+  flex: 1;
+  left: -70px;
+  position: relative;
+  border-radius: 50%;
+  background-color: var(--sky-blue-design);
+  flex-shrink: 0;
+  z-index: 2;
+}
+.ellipse-wrapper {
+  width: 158px;
+  flex: 1;
+  flex-direction: row;
+  justify-content: flex-start;
+  padding: 0 0 0 var(--padding-69xl);
+  box-sizing: border-box;
+}
+.ellipse-wrapper,
+.frame-div,
+.frame-wrapper {
+  display: flex;
+  align-items: flex-start;
+}
+.frame-div {
+  align-self: stretch;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: var(--gap-lg-2);
+}
+.frame-wrapper {
+  flex: 1;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding: 0 var(--padding-15xl) 0 0;
+}
+.cosmetic-dentistry-is {
+  align-self: stretch;
+  position: relative;
+  font-size: var(--font-size-lg);
+  letter-spacing: 0.02em;
+  line-height: 155%;
+  color: var(--body-text);
+  z-index: 1;
+}
+.iconlylight-outlinearrow-r-wrapper,
+.learn-more-group {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.iconlylight-outlinearrow-r-wrapper {
+  height: 25.8px;
+  flex-direction: column;
+  padding: var(--padding-11xs-1) 0 0;
+  box-sizing: border-box;
+}
+.learn-more-group {
+  align-self: stretch;
+  flex-direction: row;
+  gap: var(--gap-5xs);
+  z-index: 1;
+}
+.frame-wrapper1,
+.rectangle-group {
+  display: flex;
+  box-sizing: border-box;
+}
+.frame-wrapper1 {
+  height: 26.9px;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding: 0 var(--padding-79xl) 0 0;
+  text-align: left;
+  font-size: var(--font-size-base);
+}
+.rectangle-group {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-start;
+  padding: var(--padding-lgi-4) var(--padding-15xl) var(--padding-9xl)
+    var(--padding-16xl);
+  gap: var(--gap-2xl-1);
+}
+.component-1 {
+  width: 1524px;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 55px 44px 56px 43px;
+  box-sizing: border-box;
+  position: relative;
+  gap: var(--gap-xl);
+  text-align: center;
+  font-size: var(--font-size-5xl);
+  font-family: var(--font-zoho-puvi);
+}
+.component-1,
+.content-wrapper,
+.main-content {
+  display: flex;
+  align-items: flex-start;
+  max-width: 100%;
+}
+.content-wrapper {
+  width: 1606px;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: var(--gap-base);
+}
+.main-content {
+  align-self: stretch;
+  flex-direction: row;
+  justify-content: flex-end;
+  text-align: left;
+  font-size: 62px;
+  color: var(--dark-blue-design);
+  font-family: var(--font-poppins);
+}
+.were-welcoming-new {
+  margin: 0;
+  width: 577.7px;
+  position: relative;
+  font-size: inherit;
+  line-height: 125%;
+  text-transform: capitalize;
+  font-weight: 600;
+  font-family: inherit;
+  display: inline-block;
+  max-width: 100%;
+}
+.we-use-only1 {
+
+  text-align: center;
+  align-self: stretch;
+  position: relative;
+  font-size: var(--font-size-lg);
+  letter-spacing: 0.02em;
+  line-height: 155%;
+  color: var(--body-text);
+}
+.form-title-container,
+.form-title-wrapper {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+}
+.form-title-wrapper {
+  width: 605.1px;
+  flex-direction: column;
+  gap: 46.4px;
+  max-width: 125%;
+}
+.form-title-container {
+  width: 489.3px;
+  flex-direction: row;
+  padding: 0 var(--padding-11xs);
+  box-sizing: border-box;
+  max-width: 100%;
+}
+
+#email2{
+  width: 300px;
+  height: 50px;
+  border-radius: 10px;
+  /* border-color: #c6c6c6; */
+  box-shadow: grey;
+  border: 2px solid #b8b8b8;
+}
+
+
+.input-background {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  margin: 0 !important;
+  top: 0;
+  right: 0;
+  bottom: 20px;
+  left: 0;
+  border-radius: var(--br-3xs);
+  background-color: var(--secondary-color);
+  border: 1px solid #cecece;
+  box-sizing: border-box;
+}
+.iconlylight-outlinecall {
+  width: 24px;
+  height: 24px;
+  position: relative;
+  object-fit: cover;
+}
+.phone-icon-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-12xs) 0 0;
+}
+.enter-your-phone {
+  position: relative;
+  letter-spacing: 0.02em;
+  line-height: 155%;
+}
+.input-and-button,
+.input-background-parent {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.input-and-button {
+  border-radius: var(--br-3xs);
+  gap: 9px;
+  z-index: 1;
+}
+.input-background-parent {
+  position: absolute;
+  height: 92.61%;
+  width: 79.75%;
+  top: 7.39%;
+  right: 20.25%;
+  bottom: 0;
+  left: 0;
+  padding: 17.1px var(--padding-3xl) 20.6px;
+  box-sizing: border-box;
+}
+.submit {
+  position: relative;
+  font-size: var(--font-size-base);
+  letter-spacing: 0.02em;
+  line-height: 25px;
+  font-weight: 600;
+  font-family: var(--font-zoho-puvi);
+  color: var(--secondary-color);
+  text-align: left;
+  display: inline-block;
+  min-width: 57px;
+}
+.submit-container {
+  cursor: pointer;
+  border: 0;
+  padding: var(--padding-xl) var(--padding-11xl);
+  background-color: var(--mid-blue-design);
+  position: relative;
+  height: 96.01%;
+  width: 24.01%;
+  top: 0;
+  right: 0;
+  bottom: -50px;
+  left: 75.99%;
+  border-radius: 0 var(--br-3xs) var(--br-3xs) 0;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  box-sizing: border-box;
+  z-index: 2;
+}
+.frame-parent3 {
+  width: 487.3px;
+  height: 67.7px;
+  position: relative;
+  flex-shrink: 0;
+  max-width: 100%;
+  font-size: var(--font-size-base);
+  color: #cfcfcf;
+}
+.form-title-container-parent {
+  height: 408.3px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 0 119.9px;
+  box-sizing: border-box;
+  gap: 52.3px;
+  min-width: 395px;
+  flex-shrink: 0;
+  max-width: 100%;
+}
+.shapes,
+.shapes-icon {
+  position: absolute;
+  height: 92.34%;
+  width: 93.23%;
+  border-radius: var(--br-3xs);
+}
+.shapes {
+  top: 0;
+  right: 0;
+  bottom: 7.66%;
+  left: 6.77%;
+  background: linear-gradient(
+    52.56deg,
+    rgba(37, 180, 248, 0),
+    rgba(37, 180, 248, 0.47) 51.04%,
+    #25b4f8
+  );
+}
+.shapes-icon {
+  top: 7.66%;
+  right: 6.77%;
+  bottom: 0;
+  left: 0;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+.shapes-parent {
+  height: 446.7px;
+  width: 504.8px;
+  position: relative;
+  min-width: 504.8px;
+  flex-shrink: 0;
+  max-width: 100%;
+}
+.frame-parent2,
+.frontend-dental-clinic-inner {
+  display: flex;
+  flex-direction: row;
+  max-width: 100%;
+}
+.frame-parent2 {
+  width: 1299px;
+  align-items: flex-end;
+  justify-content: flex-start;
+  gap: 186.9px;
+}
+.frontend-dental-clinic-inner {
+  width: 1607px;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 0 0 53px;
+  box-sizing: border-box;
+  text-align: left;
+  font-size: var(--font-size-23xl);
+  color: var(--dark-blue-design);
+  font-family: var(--font-zoho-puvi);
+}
+.instance-child {
+  position: absolute;
+  top: 70px;
+  left: 0;
+  width: 1280px;
+  height: 414.5px;
+}
+.right-content-child {
+  width: 414px;
+  position: relative;
+  border-radius: var(--br-3xs);
+  max-height: 100%;
+  object-fit: cover;
+  min-height: 444px;
+  flex-shrink: 0;
+  max-width: 100%;
+}
+.why-choose-smile {
+  margin: 0;
+  align-self: stretch;
+  position: relative;
+  font-size: inherit;
+  line-height: 125%;
+  text-transform: capitalize;
+  font-weight: 600;
+  font-family: inherit;
+}
+.benefits-description-container,
+.title-container {
+  align-self: stretch;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  max-width: 100%;
+}
+.benefits-description-container {
+  flex-direction: row;
+  padding: 0 0 0 var(--padding-12xs);
+  box-sizing: border-box;
+  font-size: var(--font-size-lg);
+  color: var(--body-text);
+}
+.title-container {
+  flex-direction: column;
+  gap: var(--gap-xl);
+}
+.iconlylight-outlineshield-do {
+  width: 20px;
+  height: 20px;
+  position: relative;
+  object-fit: cover;
+}
+.benefit-icon-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-9xs) 0 0;
+}
+.top-quality-dental {
+  position: relative;
+  letter-spacing: 0.02em;
+  line-height: 155%;
+  font-weight: 500;
+}
+.benefit-cards {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-5xs);
+}
+.iconlylight-outlineshield-do-wrapper {
+  height: 20px;
+  flex-direction: column;
+  padding: var(--padding-9xs) 0 0;
+  box-sizing: border-box;
+}
+.benefit-cards1,
+.benefits,
+.iconlylight-outlineshield-do-wrapper,
+.title-container-parent {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.benefit-cards1 {
+  flex-direction: row;
+  gap: var(--gap-6xs);
+}
+.benefits,
+.title-container-parent {
+  flex-direction: column;
+}
+.benefits {
+  gap: var(--gap-mini);
+  font-size: var(--font-size-lg);
+  color: var(--body-text);
+}
+.title-container-parent {
+  width: 522px;
+  gap: var(--gap-xl);
+  max-width: 100%;
+}
+.book-an-appointment1 {
+  position: relative;
+  font-size: var(--font-size-base);
+  letter-spacing: 0.02em;
+  line-height: 155%;
+  font-weight: 600;
+  font-family: var(--font-zoho-puvi);
+  color: var(--secondary-color);
+  text-align: left;
+}
+.benefits-button-container,
+.reasons-container,
+.right-content {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.benefits-button-container {
+  flex-direction: row;
+  padding: 0 var(--padding-10xs);
+}
+.reasons-container,
+.right-content {
+  max-width: 100%;
+}
+.reasons-container {
+  width: 639px;
+  flex-direction: column;
+  gap: 30px;
+  min-width: 639px;
+  flex-shrink: 0;
+}
+.right-content {
+  position: absolute;
+  top: 55px;
+  left: calc(50% - 600px);
+  width: 1201px;
+  flex-direction: row;
+  gap: 251px;
+  z-index: 1;
+}
+.frame-parent4 {
+  height: 554px;
+  flex: 1;
+  position: relative;
+  background-color: var(--light-blue-design);
+  max-width: 100%;
+}
+.frontend-dental-clinic-child,
+.instance-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  max-width: 100%;
+}
+.instance-wrapper {
+  flex: 1;
+}
+.frontend-dental-clinic-child {
+  width: 1638px;
+  padding: 0 var(--padding-38xl) var(--padding-mini);
+  box-sizing: border-box;
+  text-align: left;
+  font-size: var(--font-size-23xl);
+  color: var(--dark-blue-design);
+  font-family: var(--font-zoho-puvi);
+}
+.book-appointment-here {
+  text-align: center;
+  left: 65px;
+  margin: 0;
+  position: relative;
+  font-size: inherit;
+  line-height: 53px;
+  text-transform: capitalize;
+  font-weight: 600;
+  font-family: inherit;
+}
+.clients-content,
+.testimonial-title-container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+.clients-content {
+  width: 1475px;
+  justify-content: center;
+  
+}
+.testimonial-title-container {
+  justify-content: flex-start;
+  padding: 0 var(--padding-38xl);
+}
+.we-use-only3 {
+  left: 65px;
+  width: 479px;
+  position: relative;
+  font-size: var(--font-size-base);
+  letter-spacing: 0.02em;
+  line-height: 155%;
+  display: inline-block;
+  max-width: 100%;
+}
+.testimonial-wrapper,
+.testimonials-and-description {
+  display: flex;
+  align-items: flex-start;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+.testimonials-and-description {
+  width: 718.1px;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 0 0 6px;
+  gap: var(--gap-xl);
+}
+.testimonial-wrapper {
+  width: 1506.4px;
+  flex-direction: row;
+  justify-content: center;
+  padding: 0 var(--padding-xl);
+}
+.card-backgrounds1 {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  margin: 0 !important;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+  border-radius: var(--br-3xs);
+  background-color: var(--secondary-color);
+}
+.profile-pictures-icon {
+  height: 70px;
+  width: 70px;
+  position: relative;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.thomas-daniel {
+  margin: 0;
+  position: relative;
+  font-size: inherit;
+  letter-spacing: 0.02em;
+  line-height: 155%;
+  font-weight: 500;
+  font-family: inherit;
+}
+.testimonial-name-container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 0 0 var(--padding-11xs);
+}
+.group-icon {
+  width: 104px;
+  height: 20px;
+  position: relative;
+}
+.testimonial-name-container-parent {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-8xs);
+}
+.phosfluorescently-synergize-co {
+  align-self: stretch;
+  position: relative;
+  font-size: var(--font-size-base);
+  letter-spacing: 0.02em;
+  line-height: 155%;
+  color: var(--body-text);
+  z-index: 1;
+}
+.card-backgrounds-group {
+  width: 413px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-6xl) var(--padding-xl) var(--padding-11xl)
+    var(--padding-11xl);
+  box-sizing: border-box;
+  position: relative;
+  gap: var(--gap-mini);
+  max-width: 100%;
+}
+.alena-alex {
+  margin: 0;
+  position: relative;
+  font-size: inherit;
+  letter-spacing: 0.02em;
+  line-height: 155%;
+  font-weight: 500;
+  font-family: inherit;
+  display: inline-block;
+  min-width: 124px;
+}
+.frame-wrapper4 {
+  height: 62px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-9xs) 0 0;
+  box-sizing: border-box;
+}
+.client-cards,
+.component-2 {
+  align-self: stretch;
+  display: flex;
+  justify-content: flex-start;
+  max-width: 100%;
+}
+.client-cards {
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 143px;
+  text-align: left;
+  font-size: var(--font-size-5xl);
+}
+.component-2 {
+  flex-direction: column;
+  align-items: flex-end;
+  gap: var(--gap-48xl);
+}
+.dentist1,
+.icon1 {
+  position: relative;
+  flex-shrink: 0;
+}
+.icon1 {
+  height: 34.8px;
+  width: 32.8px;
+  min-height: 35px;
+}
+.dentist1 {
+  align-self: stretch;
+  font-weight: 900;
+}
+.icon-group {
+  width: 128.7px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 7.7px;
+}
+.about1,
+.contact1,
+.home1,
+.service {
+  position: relative;
+  letter-spacing: 0.02em;
+  line-height: 25px;
+  font-weight: 500;
+  display: inline-block;
+  min-width: 48px;
+}
+.about1,
+.contact1,
+.service {
+  min-width: 59px;
+}
+.about1,
+.contact1 {
+  min-width: 49px;
+}
+.contact1 {
+  min-width: 64px;
+}
+.footer-list,
+.footer-nav-links {
+  display: flex;
+  align-items: flex-start;
+}
+.footer-nav-links {
+  align-self: stretch;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 39.1px;
+}
+.footer-list {
+  width: 401.5px;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 0 0 4.8px;
+  box-sizing: border-box;
+  max-width: 100%;
+  font-size: var(--font-size-base);
+  color: var(--body-text);
+  font-family: var(--font-zoho-puvi);
+}
+.frame-parent7 {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: space-between;
+  max-width: 100%;
+  gap: var(--gap-xl);
+}
+.footer-container,
+.footer-divider {
+  box-sizing: border-box;
+  max-width: 100%;
+}
+.footer-container {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 0 22.2px var(--padding-10xs);
+}
+.footer-divider {
+  width: 1527px;
+  height: 2px;
+  position: relative;
+  border-top: 2px solid var(--dark-blue-design);
+}
+.all-rights-reserved {
+  align-self: stretch;
+  position: relative;
+  letter-spacing: 0.02em;
+  line-height: 22px;
+  white-space: pre-wrap;
+}
+.all-rights-reserved-uifryco-wrapper {
+  width: 482.5px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-6xs) 0 0;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+.facebook-icon {
+  height: 32px;
+  width: 32px;
+  position: relative;
+  min-height: 32px;
+}
+.legal,
+.social {
+  flex-direction: row;
+  gap: var(--gap-xl);
+}
+.social {
+  width: 285.9px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.legal {
+  width: 1525px;
+  justify-content: space-between;
+  font-size: 14px;
+  font-family: var(--font-zoho-puvi);
+}
+.footer-container-parent,
+.footer-navigation,
+.legal {
+  display: flex;
+  align-items: flex-start;
+  max-width: 100%;
+}
+.footer-container-parent {
+  flex: 1;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 28px;
+}
+.footer-navigation {
+  width: 1577px;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding: 0 18px;
+  box-sizing: border-box;
+  text-align: left;
+  font-size: var(--font-size-xl);
+  font-family: var(--font-inter);
+}
+.component-2-parent,
+.frontend-dental-clinic {
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  text-align: center;
+  font-size: var(--font-size-23xl);
+  color: var(--dark-blue-design);
+  font-family: var(--font-zoho-puvi);
+}
+.component-2-parent {
+  width: 1608px;
+  align-items: flex-end;
+  gap: var(--gap-48xl);
+}
+.frontend-dental-clinic {
+  width: 1920px;
+  background-color: var(--secondary-color);
+  overflow: hidden;
+  align-items: flex-start;
+  padding: var(--padding-20xl) 101px 86px 156px;
+  box-sizing: border-box;
+  gap: 137px;
+  line-height: normal;
+  letter-spacing: normal;
+}
+@media screen and (max-width: 1700px) {
+  .hero-container {
+    flex: 1;
+  }
+  .component-1,
+  .component-3 {
+    flex-wrap: wrap;
+  }
+  .reasons-container,
+  .right-content-child {
+    flex: 1;
+  }
+  .right-content {
+    flex-wrap: wrap;
+  }
+  .frame-parent4 {
+    height: auto;
+    min-height: 554;
+  }
+  .client-cards {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 1325px) {
+  .hero-container {
+    min-width: 100%;
+  }
+  .component-1 {
+    padding-left: var(--padding-2xl);
+    padding-right: var(--padding-3xl);
+    box-sizing: border-box;
+  }
+  .shapes-parent {
+    flex: 1;
+  }
+  .frame-parent2 {
+    flex-wrap: wrap;
+    gap: 93px;
+  }
+  .reasons-container {
+    min-width: 100%;
+  }
+  .frontend-dental-clinic-child {
+    padding-left: var(--padding-9xl);
+    padding-right: var(--padding-9xl);
+    box-sizing: border-box;
+  }
+  .client-cards {
+    gap: 71px;
+  }
+  .legal {
+    flex-wrap: wrap;
+  }
+  .frontend-dental-clinic {
+    gap: 68px;
+    padding-left: var(--padding-59xl);
+    padding-right: 50px;
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 900px) {
+  .get-ready-for {
+    font-size: 50px;
+    line-height: 60px;
+  }
+  .get-ready-for-your-best-ever-d-parent {
+    gap: var(--gap-base);
+  }
+  .frame-parent {
+    gap: 37px;
+  }
+  .hero-container {
+    padding-top: 69px;
+    box-sizing: border-box;
+  }
+  .dental-logo-icon-design-templa {
+    min-width: 100%;
+  }
+  .page-content {
+    padding-top: var(--padding-10xl);
+    box-sizing: border-box;
+  }
+  .navbar-menu {
+    display: none;
+  }
+  .navbar {
+    width: 950.5px;
+  }
+  .were-welcoming-new {
+    font-size: var(--font-size-15xl);
+    line-height: 42px;
+  }
+  .form-title-wrapper {
+    gap: var(--gap-4xl);
+  }
+  .form-title-container-parent {
+    gap: 26px;
+    padding-bottom: var(--padding-59xl);
+    box-sizing: border-box;
+    min-width: 100%;
+  }
+  .shapes-parent {
+    min-width: 100%;
+  }
+  .frame-parent2 {
+    gap: 47px;
+  }
+  .frontend-dental-clinic-inner {
+    padding-bottom: var(--padding-15xl);
+    box-sizing: border-box;
+  }
+  .book-appointment-here,
+  .why-choose-smile {
+    font-size: var(--font-size-15xl);
+    line-height: 42px;
+  }
+  .testimonial-title-container {
+    padding-left: var(--padding-9xl);
+    padding-right: var(--padding-9xl);
+    box-sizing: border-box;
+  }
+  .client-cards {
+    gap: 36px;
+  }
+  .component-2 {
+    gap: var(--gap-14xl);
+  }
+  .frame-parent7 {
+    flex-wrap: wrap;
+  }
+  .component-2-parent {
+    gap: var(--gap-14xl);
+  }
+  .frontend-dental-clinic {
+    gap: 34px;
+    padding-left: var(--padding-20xl);
+    padding-right: var(--padding-6xl);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 450px) {
+  .get-ready-for {
+    font-size: 37px;
+    line-height: 45px;
+  }
+  .frame-parent {
+    gap: var(--gap-lg);
+  }
+  .navigation-links {
+    gap: 19px;
+  }
+  .root-canal-treatment {
+    font-size: var(--font-size-lgi);
+    line-height: 23px;
+  }
+  .component-1 {
+    padding-top: var(--padding-17xl);
+    padding-bottom: var(--padding-17xl);
+    box-sizing: border-box;
+  }
+  .were-welcoming-new {
+    font-size: var(--font-size-6xl);
+    line-height: 31px;
+  }
+  .frame-parent2 {
+    gap: var(--gap-4xl);
+  }
+  .book-appointment-here,
+  .why-choose-smile {
+    font-size: var(--font-size-6xl);
+    line-height: 31px;
+  }
+  .alena-alex,
+  .thomas-daniel {
+    font-size: var(--font-size-lgi);
+    line-height: 30px;
+  }
+  .client-cards {
+    gap: var(--gap-lg);
+  }
+  .component-2 {
+    gap: var(--gap-mid);
+  }
+  .dentist1 {
+    font-size: var(--font-size-base);
+  }
+  .footer-nav-links {
+    flex-wrap: wrap;
+    gap: var(--gap-xl);
+  }
+  .component-2-parent {
+    gap: var(--gap-mid);
+  }
+}
