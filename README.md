@@ -8,4 +8,4 @@
   2) In the terminal, run `npm install`
   3) also do run 'npm i express mongoose nodemon'
   4) Run `node server.js` to start the server.js (database file)
-  
+  5) run the html file at the given port (in this project localhost 3019)
