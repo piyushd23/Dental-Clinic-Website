@@ -26,6 +26,7 @@ function mail(){
         form.appendChild(element);
         document.querySelector('.message').innerHTML='Appointment Booked Successfully, check your email for details';
         console.log('SUCCESS!', response.status, response.text);
+        document.getElementById('form').reset();
       },
       (error) => {
         const form = document.getElementById('form1');
