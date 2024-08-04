@@ -313,6 +313,13 @@ button:focus {
   font-weight: 600;
   display: inline-block;
   min-width: 50px;
+  text-decoration: none;
+  color:#000;
+  transition: all ease-in-out 1s;
+}
+.about:hover,.home:hover,.contact:hover,.services:hover{
+  text-decoration: underline;
+  color:#1376F8;
 }
 .about,
 .contact,
@@ -1373,6 +1380,10 @@ button:focus {
   position: relative;
   min-height: 32px;
 }
+.facebook-icon:hover{
+  scale:1.1;
+  cursor:pointer;
+}
 .legal,
 .social {
   flex-direction: row;
@@ -1634,4 +1645,13 @@ button:focus {
   .component-2-parent {
     gap: var(--gap-mid);
   }
+}
+#link1,#link2,#link3,#link4{
+  text-decoration: none;
+  color:#000;
+  transition: all ease-in-out 1s;
+}
+#link1:hover,#link2:hover,#link3:hover,#link4:hover{
+  text-decoration: underline;
+  color:#1376F8;
 }
