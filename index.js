@@ -10,7 +10,7 @@ function mail(){
 
     };
     
-    if (document.getElementById('name').value=='' || document.getElementById('email').value=='' || document.getElementById('age').value=='' || document.getElementById('date').value=='' || document.getElementById('time').value=='' || document.getElementById('mobile').value)
+    if (document.getElementById('name').value=='' || document.getElementById('email').value=='' || document.getElementById('age').value=='' || document.getElementById('date').value=='' || document.getElementById('time').value=='' || document.getElementById('mobile').value=='')
     {
         const form = document.getElementById('form1');
         const element = document.createElement('p');
@@ -40,10 +40,4 @@ function mail(){
       
     }}
 
-
-    
-
-function fun(){
-
-}
   

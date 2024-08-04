@@ -303,6 +303,13 @@ button:focus {
   font-weight: 600;
   display: inline-block;
   min-width: 50px;
+  text-decoration: none;
+  color:#000;
+  transition: all ease-in-out 1s;
+}
+.about:hover,.home:hover,.contact:hover,.services:hover{
+  text-decoration: underline;
+  color:#1376F8;
 }
 .about,
 .contact,
@@ -365,14 +372,21 @@ button:focus {
   white-space: nowrap;
 }
 .navbar {
-  width: 1401px;
+  width: 1501px;
   justify-content: space-between;
   gap: var(--gap-xl);
-  margin-left: -1559px;
+  margin-top: 2%;
   text-align: left;
   font-size: var(--font-size-xl);
   color: var(--dark-blue-design);
   font-family: var(--font-inter);
+
+}
+#navpos{
+  position: fixed;
+  top:0;
+  z-index:1000;
+  background-color: white;
 }
 .content-wrapper-inner,
 .navbar,
@@ -1362,6 +1376,10 @@ button:focus {
   position: relative;
   min-height: 32px;
 }
+.facebook-icon:hover{
+  scale:1.1;
+  cursor:pointer;
+}
 .legal,
 .social {
   flex-direction: row;
@@ -1581,6 +1599,7 @@ button:focus {
   .navigation-links {
     gap: 19px;
   }
+
   .root-canal-treatment {
     font-size: var(--font-size-lgi);
     line-height: 23px;
@@ -1623,4 +1642,13 @@ button:focus {
   .component-2-parent {
     gap: var(--gap-mid);
   }
+}
+#link1,#link2,#link3,#link4{
+  text-decoration: none;
+  color:#000;
+  transition: all ease-in-out 1s;
+}
+#link1:hover,#link2:hover,#link3:hover,#link4:hover{
+  text-decoration: underline;
+  color:#1376F8;
 }

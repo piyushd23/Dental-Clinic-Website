@@ -20,7 +20,7 @@
     />
   </head>
   <body>
-    <div class="frontend-dental-clinic">
+    <div class="frontend-dental-clinic" id="home1">
       <section class="main-content">
         <div class="content-wrapper">
           <div class="content-wrapper-inner">
@@ -43,7 +43,7 @@
                         </div>
                       </div>
                       <div class="hero-button-container">
-                        <button class="book-appointment-container">
+                        <button class="book-appointment-container" id="imgbok">
                           <div class="book-an-appointment">
                             Book an appointment
                           </div>
@@ -59,7 +59,7 @@
                   />
                 </div>
               </div>
-              <header class="navbar">
+              <header class="navbar" id="navpos">
                 <div class="navbar-container">
                   <div class="icon-parent">
                     <img
@@ -76,20 +76,20 @@
                 </div>
                 <nav class="navbar-menu">
                   <nav class="navigation-links">
-                    <div class="home">Home</div>
-                    <div class="services">Services</div>
-                    <div class="about">About</div>
-                    <div class="contact">Contact</div>
+                    <a href="#home1" class="home">Home</a>
+                    <a href="#section1" class="services">Services</a>
+                    <a href="#about1" class="about">About</a>
+                    <a href="#contact1" class="contact">Contact</a>
                   </nav>
                 </nav>
-                <button class="book-now-button-container" style="width: 160px;">
+                <button class="book-now-button-container" id="booknow" style="width: 160px;">
                   <div class="book-now">Book Now</div>
                 </button>
               </header>
             </div>
           </div>
           <div class="component-1">
-            <div class="component-1-child"></div>
+            <div class="component-1-child" id="section1"></div>
             <div class="frame-group">
               <div class="card-backgrounds-parent">
                 <div class="card-backgrounds"></div>
@@ -250,7 +250,7 @@
       </section>
       <section class="frontend-dental-clinic-child">
         <div class="instance-wrapper">
-          <div class="frame-parent4">
+          <div class="frame-parent4" id="about1">
             <img
               class="instance-child"
               alt=""
@@ -331,7 +331,7 @@
                   </div>
                 </div>
                 <div class="benefits-button-container">
-                  <button class="book-appointment-container">
+                  <button class="book-appointment-container" id="bok2">
                     <div class="book-an-appointment1">Book an appointment</div>
                   </button>
                 </div>
@@ -341,7 +341,7 @@
         </div>
       </section>
       <div class="clients-content">
-        <h1 class="book-appointment-here">Book Appointment here</h1>
+        <h1 class="book-appointment-here" id="booknow1">Book Appointment here</h1>
       </div>
       <div>
       <div id="form1">
@@ -489,9 +489,9 @@
         </div>
         <div class="footer-navigation">
           <div class="instance-wrapper">
-            <div class="footer-container-parent">
+            <div class="footer-container-parent" id="contact1">
               <div class="footer-container">
-                <div class="frame-parent7">
+                <div class="frame-parent7" id="bottomnav">
                   <div class="icon-group">
                     <img class="icon1" alt="" src="./public/icon-1.svg" />
 
@@ -501,10 +501,10 @@
                   </div>
                   <div class="footer-list">
                     <div class="footer-nav-links">
-                      <div class="home1">Home</div>
-                      <div class="service">Service</div>
-                      <div class="about1">About</div>
-                      <div class="contact1">Contact</div>
+                      <a href="#home1" id="link1">Home</a>
+                      <a href="#section1" id="link2">Services</a>
+                      <a href="#about1" id="link3">About</a>
+                      <a href="#contact1" id="link4">Contact</a>
                     </div>
                   </div>
                 </div>
@@ -557,6 +557,56 @@
         </div>
       </section>
     </div>
-    
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+          const links = document.querySelectorAll('.navbar-menu a');
+          
+          links.forEach(link => {
+              link.addEventListener('click', (e) => {
+                  e.preventDefault();
+                  const targetId = link.getAttribute('href').substring(1);
+                  const targetElement = document.getElementById(targetId);
+                  
+                  if (targetElement) {
+                      targetElement.scrollIntoView({
+                          behavior: 'smooth'
+                      });
+                  }
+              });
+          });
+      });
+      
+      function bokap() {
+        document.querySelector('#booknow1').scrollIntoView({
+              behavior:"smooth",
+            });
+      }
+      const navbutton=document.getElementById('booknow');
+      const imgbutton=document.getElementById('imgbok');
+      const difbutton=document.getElementById('bok2');
+      navbutton.addEventListener('click',bokap);
+      imgbutton.addEventListener('click',bokap);
+      difbutton.addEventListener('click',bokap);
+
+
+
+      document.addEventListener('DOMContentLoaded', () => {
+          const links = document.querySelectorAll('#bottomnav a');
+          
+          links.forEach(link => {
+              link.addEventListener('click', (e) => {
+                  e.preventDefault();
+                  const targetId = link.getAttribute('href').substring(1);
+                  const targetElement = document.getElementById(targetId);
+                  
+                  if (targetElement) {
+                      targetElement.scrollIntoView({
+                          behavior: 'smooth'
+                      });
+                  }
+              });
+          });
+      });
+  </script>
   </body>
 </html>
