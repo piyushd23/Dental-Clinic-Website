@@ -1,3 +1,11 @@
+#navpos{
+  position: fixed;
+  top:0;
+  z-index:1000;
+  background-color: white;
+}
+
+
 .message{
   position: absolute;
   font-size: 24px;
@@ -227,13 +235,15 @@ button:focus {
   min-width: 726px;
 }
 .dental-logo-icon-design-templa {
-  height: 673px;
+  height: 400px;
   flex: 1;
   position: relative;
-  max-width: 100%;
+  top: 60px;
+  right: -180px;
+  max-width: 25%;
   overflow: hidden;
   object-fit: cover;
-  min-width: 543px;
+  min-width: 400px;
 }
 .component-3,
 .page-content {
@@ -303,13 +313,6 @@ button:focus {
   font-weight: 600;
   display: inline-block;
   min-width: 50px;
-  text-decoration: none;
-  color:#000;
-  transition: all ease-in-out 1s;
-}
-.about:hover,.home:hover,.contact:hover,.services:hover{
-  text-decoration: underline;
-  color:#1376F8;
 }
 .about,
 .contact,
@@ -372,25 +375,19 @@ button:focus {
   white-space: nowrap;
 }
 .navbar {
-  width: 1501px;
+  width: 1401px;
   justify-content: space-between;
   gap: var(--gap-xl);
-  margin-top: 2%;
+  margin-top: 1.5%;
   text-align: left;
   font-size: var(--font-size-xl);
   color: var(--dark-blue-design);
   font-family: var(--font-inter);
-
-}
-#navpos{
-  position: fixed;
-  top:0;
-  z-index:1000;
-  background-color: white;
 }
 .content-wrapper-inner,
 .navbar,
 .page-content-parent {
+  position: relative;
   display: flex;
   flex-direction: row;
   align-items: flex-start;
@@ -1376,10 +1373,6 @@ button:focus {
   position: relative;
   min-height: 32px;
 }
-.facebook-icon:hover{
-  scale:1.1;
-  cursor:pointer;
-}
 .legal,
 .social {
   flex-direction: row;
@@ -1599,7 +1592,6 @@ button:focus {
   .navigation-links {
     gap: 19px;
   }
-
   .root-canal-treatment {
     font-size: var(--font-size-lgi);
     line-height: 23px;
@@ -1642,13 +1634,4 @@ button:focus {
   .component-2-parent {
     gap: var(--gap-mid);
   }
-}
-#link1,#link2,#link3,#link4{
-  text-decoration: none;
-  color:#000;
-  transition: all ease-in-out 1s;
-}
-#link1:hover,#link2:hover,#link3:hover,#link4:hover{
-  text-decoration: underline;
-  color:#1376F8;
 }
